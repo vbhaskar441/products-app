@@ -20,7 +20,7 @@ import { ProductsModule } from './products/products.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres', // Replace with your PostgreSQL username
-      password: 'JaiShriRam$', // Replace with your PostgreSQL password
+      password: 'PASSWORD', // Replace with your PostgreSQL password
       database: 'productsdb', // Replace with your PostgreSQL database name
       //autoLoadEntities: true,
       //entities: [__dirname + '/**/*.entity{.ts,.js}'],

@@ -1,3 +1,5 @@
+CREATE DATABASE productsdb;
+
 CREATE TABLE IF NOT EXISTS products (
     product_id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
