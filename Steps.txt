@@ -1,0 +1,58 @@
+npm install -g @nestjs/cli
+nest new nestjs-product-app
+cd nestjs-product-app
+
+npm start
+
+npm install @nestjs/typeorm typeorm pg
+npm install class-validator class-transformer
+
+
+npm install dotenv
+
+npm install --save-dev jest @nestjs/testing @types/jest ts-jest
+npx ts-jest config:init
+
+
+npm install --save-dev supertest
+Mocking Tools (for unit tests):
+npm install --save-dev jest-mock
+
+
+npm run start:dev
+Check if the application connects to PostgreSQL correctly.
+
+Run Tests
+Execute all unit tests:
+npm run test
+
+
+For running tests in watch mode:
+npm run test:watch
+
+
+To see test coverage reports:
+npm run test:cov
+
+create .babelrc
+{
+  "presets": ["@babel/preset-env"]
+}
+
+add jest.config.ts 
+preset: 'ts-jest',
+  testEnvironment: 'node',
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  rootDir: '.',
+  testRegex: '.*\\.spec\\.ts$',
+  transform: {
+    '^.+\\.(t|j)s$': 'ts-jest',
+  },
+  moduleDirectories: ['node_modules', '<rootDir>'],
+
+
+GET /products - Get all products.
+GET /products/:id - Get a product by ID.
+POST /products - Create a product (body: { "name": "string", "price": number }).
+PUT /products/:id - Update a product (body: { "name": "string", "price": number }).
+DELETE /products/:id - Delete a product by ID.
